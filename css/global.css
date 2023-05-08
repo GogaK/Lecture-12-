@@ -11,9 +11,7 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
-     -moz-text-size-adjust: none;
-          text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 footer, header, nav, section, main {
@@ -53,4 +51,37 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+header {
+  height: 50px;
+  display: flex;
+}
+header .logo {
+  width: 40px;
+  height: 16px;
+  font-family: "Helvetica";
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  font-style: normal;
+  text-align: left;
+  color: #fa6980;
+}
+header nav {
+  width: 180px;
+}
+header nav ul {
+  display: flex;
+  margin-left: 90px;
+}
+header nav li {
+  padding-right: 26px;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 20px;
 }/*# sourceMappingURL=global.css.map */
