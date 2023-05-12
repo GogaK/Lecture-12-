@@ -112,6 +112,8 @@ header nav {
   display: block;
   max-width: 1170px;
   font-family: "Roboto", sans-serif;
+  margin-top: 25px;
+  margin-bottom: 40px;
 }
 
 .s-1 {
