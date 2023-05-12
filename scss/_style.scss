@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(246, 243, 243);
+}
 header {
   height: 50px;
   display: flex;
@@ -8,8 +11,7 @@ nav {
 
   ul {
     display: flex;
-    margin-left: 20px;
-    color: $mycolorLi;
+    color: $mycolorheader;
   }
   li {
     padding-right: 50px;
@@ -33,13 +35,15 @@ header {
   @include mycontainer;
 }
 .trending {
-  margin-top: 25px;
-  padding-bottom: 40px;
+  @include trending;
 }
 
 .s-1 {
   @include goflex;
   max-width: 1170px;
+  & p {
+    @include img-p;
+  }
 }
 
 // section-2
@@ -54,6 +58,7 @@ header {
 
 .card-wrapper {
   @include mycontainer;
+  background-color: $mycolor2;
 }
 
 .card-wrapper-2 {
@@ -63,6 +68,7 @@ header {
 }
 .c1-img {
   padding-bottom: 40px;
+  background-color: $mycolor2;
 }
 
 .c2-img {
@@ -82,10 +88,15 @@ footer {
     color: $mycolor2;
     padding-bottom: 7px;
   }
+
   .foot-a {
     @include foot-a;
   }
   .logo-2 {
     @include logo-2;
   }
+}
+
+.footer-end {
+  @include footer-end;
 }

@@ -55,17 +55,8 @@ a {
   box-sizing: border-box;
 }
 
-.trending {
-  display: block;
-  max-width: 1170px;
-}
-
-.footer-end {
-  border-style: dotted;
-  background: #a6adb4;
-  border-color: black;
-  width: 100%;
-  height: 200px;
+body {
+  background-color: rgb(246, 243, 243);
 }
 
 header {
@@ -78,8 +69,7 @@ nav {
 }
 nav ul {
   display: flex;
-  margin-left: 20px;
-  color: red;
+  color: #343638;
 }
 nav li {
   padding-right: 50px;
@@ -94,7 +84,7 @@ header {
 header > a {
   color: #fa6980;
   width: 40px;
-  font-family: "Helvetica";
+  font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: bold;
   line-height: 20px;
@@ -104,13 +94,12 @@ header > a {
 header nav {
   margin-left: 200px;
   font-size: 11px;
-  font-family: "Helvetica";
   font-size: 11px;
   font-weight: bold;
   line-height: 20px;
   font-style: normal;
   text-align: left;
-  color: #343638;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -120,14 +109,25 @@ header nav {
 }
 
 .trending {
-  margin-top: 25px;
-  padding-bottom: 40px;
+  display: block;
+  max-width: 1170px;
+  font-family: "Roboto", sans-serif;
 }
 
 .s-1 {
   display: flex;
   justify-content: space-evenly;
   max-width: 1170px;
+}
+.s-1 p {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 23px;
+  font-style: normal;
+  text-align: left;
+  color: #a6adb4;
+  padding-top: 50px;
+  padding-left: 40px;
 }
 
 .s-2 {
@@ -143,6 +143,7 @@ header nav {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
+  background-color: white;
 }
 
 .card-wrapper-2 {
@@ -155,6 +156,7 @@ header nav {
 
 .c1-img {
   padding-bottom: 40px;
+  background-color: white;
 }
 
 .c2-img {
@@ -179,6 +181,7 @@ footer .foot-a {
   display: flex;
   flex-direction: column;
   margin-top: 58px;
+  font-family: "Roboto", sans-serif;
 }
 footer .logo-2 {
   font-size: 50px;
@@ -191,4 +194,13 @@ footer .logo-2 {
   line-height: 20px;
   font-style: normal;
   text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-end {
+  border-style: dotted;
+  background: #a6adb4;
+  border-color: black;
+  width: 100%;
+  height: 200px;
 }/*# sourceMappingURL=global.css.map */
