@@ -11,7 +11,9 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
 }
 
 footer, header, nav, section, main {
@@ -53,35 +55,140 @@ a {
   box-sizing: border-box;
 }
 
+.trending {
+  display: block;
+  max-width: 1170px;
+}
+
+.footer-end {
+  border-style: dotted;
+  background: #a6adb4;
+  border-color: black;
+  width: 100%;
+  height: 200px;
+}
+
 header {
   height: 50px;
   display: flex;
 }
-header .logo {
+
+nav {
+  width: 180px;
+}
+nav ul {
+  display: flex;
+  margin-left: 20px;
+  color: red;
+}
+nav li {
+  padding-right: 50px;
+}
+
+header {
+  height: 100%;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+header > a {
+  color: #fa6980;
   width: 40px;
-  height: 16px;
   font-family: "Helvetica";
   font-size: 13px;
   font-weight: bold;
   line-height: 20px;
   font-style: normal;
-  text-align: left;
-  color: #fa6980;
+  vertical-align: bottom;
 }
 header nav {
-  width: 180px;
-}
-header nav ul {
-  display: flex;
-  margin-left: 90px;
-}
-header nav li {
-  padding-right: 26px;
+  margin-left: 200px;
+  font-size: 11px;
+  font-family: "Helvetica";
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 20px;
+  font-style: normal;
+  text-align: left;
+  color: #343638;
 }
 
 .container {
   max-width: 1170px;
   width: 100%;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.trending {
+  margin-top: 25px;
+  padding-bottom: 40px;
+}
+
+.s-1 {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1170px;
+}
+
+.s-2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+.s-2 .hpn-now {
+  padding-bottom: 40px;
+}
+
+.card-wrapper {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card-wrapper-2 {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.c1-img {
+  padding-bottom: 40px;
+}
+
+.c2-img {
+  padding-top: 80px;
+  padding-left: 30px;
+}
+
+.lorem {
+  width: 300px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+footer a {
+  color: white;
+  padding-bottom: 7px;
+}
+footer .foot-a {
+  display: flex;
+  flex-direction: column;
+  margin-top: 58px;
+}
+footer .logo-2 {
+  font-size: 50px;
+  color: white;
+  display: flex;
+  margin-top: 58px;
+  font-family: "Acumin Pro";
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  font-style: normal;
+  text-align: left;
 }/*# sourceMappingURL=global.css.map */

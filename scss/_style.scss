@@ -1,34 +1,91 @@
 header {
   height: 50px;
   display: flex;
+}
 
-  .logo {
-    width: 40px;
-    height: 16px;
-    font-family: "Helvetica";
-    font-size: 13px;
-    font-weight: bold;
-    line-height: 20px;
-    font-style: normal;
-    text-align: left;
-    color: #fa6980;
+nav {
+  width: 180px;
+
+  ul {
+    display: flex;
+    margin-left: 20px;
+    color: $mycolorLi;
+  }
+  li {
+    padding-right: 50px;
+  }
+}
+
+header {
+  @include myheader;
+  & > a {
+    @include header-a;
   }
 
   nav {
-    width: 180px;
-
-    ul {
-      display: flex;
-      margin-left: 90px;
-    }
-    li {
-      padding-right: 26px;
-    }
+    @include mynav;
   }
 }
+
+// section - 1
+
 .container {
+  @include mycontainer;
+}
+.trending {
+  margin-top: 25px;
+  padding-bottom: 40px;
+}
+
+.s-1 {
+  @include goflex;
   max-width: 1170px;
-  width: 100%;
-  margin-left: 20px;
-  margin-top: 20px;
+}
+
+// section-2
+
+.s-2 {
+  @include goflex;
+  margin-top: 60px;
+  .hpn-now {
+    padding-bottom: 40px;
+  }
+}
+
+.card-wrapper {
+  @include mycontainer;
+}
+
+.card-wrapper-2 {
+  @include mycontainer;
+  display: flex;
+  justify-content: space-between;
+}
+.c1-img {
+  padding-bottom: 40px;
+}
+
+.c2-img {
+  padding-top: 80px;
+  padding-left: 30px;
+}
+
+.lorem {
+  width: 300px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  & a {
+    color: $mycolor2;
+    padding-bottom: 7px;
+  }
+  .foot-a {
+    @include foot-a;
+  }
+  .logo-2 {
+    @include logo-2;
+  }
 }
